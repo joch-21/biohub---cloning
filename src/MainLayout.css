@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+/* 左侧导航栏 */
+.sidebar {
+  width: 220px;
+  height: 100%;
+  background-color: #ffffff;
+  border-right: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px; /* 上下内边距缩小 */
+}
+
+.logo-icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.logo-img {
+  width: 42px; /* 原 50px */
+  height: 42px;
+  object-fit: contain;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 24px; /* 原 30px */
+  color: #111827;
+}
+
+.brand-sub {
+  font-weight: 700;
+  font-size: 20px; /* 原 25px */
+  color: #111827;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 12px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px; /* 原 10px */
+  border-radius: 8px;
+  text-decoration: none;
+  color: #7c7c7c;
+  font-size: 16px; /* 原 20px，更符合标准后台管理系统视感 */
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+  margin: 4px;
+  max-width: 190px;
+}
+
+.nav-item:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.nav-item.active {
+  background-color: #43DE36;
+  color: #ffffff;
+}
+
+.nav-icon {
+  font-size: 28px; /* 原 40px，缩小后侧边栏显得更加精致 */
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.nav-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dashboard-layout-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 右侧主内容区域 */
+.main-content-area {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #ffffff;
+}

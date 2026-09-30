@@ -1,0 +1,163 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 隐藏多余的滚动条 */
+}
+
+/* 全局页面容器：使用全屏背景图和居中布局 */
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('./assets/bg.jpg') no-repeat center center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 遮罩层，让背景稍暗一些以突显文字 */
+.login-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+/* 内容卡片层 */
+.login-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  padding: 20px;
+}
+
+/* Logo 和 标题区域 */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 75px;
+}
+
+.brand img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.brand h1 {
+  color: #ffffff;
+  font-size: 50px; 
+  font-weight: 700;
+  margin: 0;
+  line-height: 0.95;
+  letter-spacing: 0.5px;
+}
+
+/* 表单容器 */
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 带有图标的输入框包裹层 */
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+/* 输入框左侧图标 */
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff; /* 改为白色提升对比度 */
+  font-size: 18px; /* 适当放大图标 */
+  pointer-events: none;
+  z-index: 2; /* 关键修改：加上层级，确保图标浮在 input 背景上方 */
+}
+
+/* 输入框：半透明磨砂玻璃效果 */
+.login-form input {
+  width: 100%;
+  height: 46px;
+  padding: 0 20px 0 45px; /* 关键修改：将右侧 padding 改为 20px，避免输入的文字贴着右边框 */
+  border-radius: 23px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.login-form input::placeholder {
+  color: #a0a5ab;
+}
+
+.login-form input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 绿色提交按钮 */
+.login-btn {
+  width: 100%;
+  height: 46px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 23px;
+  background: #39d332;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+  background: #32be2c;
+}
+
+.login-btn:active {
+  transform: scale(0.99);
+}
+
+/* 右下角署名样式 */
+.attribution {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+.attribution span {
+  color: #39d332;
+}

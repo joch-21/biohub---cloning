@@ -1,0 +1,93 @@
+[
+  {
+    "id": "BIO-2026-001",
+    "scientificName": "Shorea albida",
+    "commonName": "Alan Bunga",
+    "family": "Dipterocarpaceae",
+    "height": "42.5",
+    "latitude": "1.553284",
+    "longitude": "110.344211",
+    "accuracy": 4,
+    "morphologicalNotes": "Emergent peat swamp canopy tree. Distinctive light cauliflower-shaped crown from aerial view. Buttresses well-developed up to 2.5m, bark deeply fissured with dark reddish-brown inner bark.",
+    "status": "Pending",
+    "rejectionReason": null,
+    "reviewedByRole": null,
+    "dateRecorded": "2026-09-28",
+    "images": [
+      "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=600&q=80"
+    ]
+  },
+  {
+    "id": "BIO-2026-002",
+    "scientificName": "Dipterocarpus sarawakensis",
+    "commonName": "Keruing Sarawak",
+    "family": "Dipterocarpaceae",
+    "height": "38.0",
+    "latitude": "1.562100",
+    "longitude": "110.351220",
+    "accuracy": 3,
+    "morphologicalNotes": "Mature individual on ridge crest. Straight cylindrical bole. Prominent resin exudation on lower trunk. Leaves coriaceous, obovate with distinct scalariform venation.",
+    "status": "Approved",
+    "rejectionReason": null,
+    "reviewedByRole": "Senior Conservationist",
+    "dateRecorded": "2026-09-25",
+    "images": [
+      "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80"
+    ]
+  },
+  {
+    "id": "BIO-2026-003",
+    "scientificName": "Nepenthes bicalcarata",
+    "commonName": "Fanged Pitcher Plant",
+    "family": "Nepenthaceae",
+    "height": "3.2",
+    "latitude": "1.549110",
+    "longitude": "110.339870",
+    "accuracy": 2,
+    "morphologicalNotes": "Robust climbing epiphyte in understory peat forest. Lower pitchers showing distinctive paired thorn-like spines under lid. Symbiotic Camponotus schmitzi ant colonisation observed in tendril swelling.",
+    "status": "Approved",
+    "rejectionReason": null,
+    "reviewedByRole": "Conservationist",
+    "dateRecorded": "2026-09-26",
+    "images": [
+      "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=600&q=80"
+    ]
+  },
+  {
+    "id": "BIO-2026-004",
+    "scientificName": "Eusideroxylon zwageri",
+    "commonName": "Belian (Borneo Ironwood)",
+    "family": "Lauraceae",
+    "height": "28.4",
+    "latitude": "1.558940",
+    "longitude": "110.347890",
+    "accuracy": 5,
+    "morphologicalNotes": "Extremely dense heartwood, dark grey bark peeling in longitudinal scales. Basal diameter ~1.1m. No flowers observed; dormant phenology phase.",
+    "status": "Pending",
+    "rejectionReason": null,
+    "reviewedByRole": null,
+    "dateRecorded": "2026-09-29",
+    "images": [
+      "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=600&q=80"
+    ]
+  },
+  {
+    "id": "BIO-2026-005",
+    "scientificName": "Rafflesia tuan-mudae",
+    "commonName": "Bunga Pakma",
+    "family": "Rafflesiaceae",
+    "height": "0.4",
+    "latitude": "1.571430",
+    "longitude": "110.362150",
+    "accuracy": 8,
+    "morphologicalNotes": "Single bloom on Tetrastigma vine host root. Diameter approximately 65cm. Perigone lobes displaying dense ramenta warts. Day 3 of flowering with mild carrion scent.",
+    "status": "Rejected",
+    "rejectionReason": "Perigone lobe count and wart patterning appear ambiguous. Photos are overexposed; please submit a clear close-up of the central column diaphragms.",
+    "reviewedByRole": "Senior Conservationist",
+    "dateRecorded": "2026-09-22",
+    "images": [
+      "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80"
+    ]
+  }
+]

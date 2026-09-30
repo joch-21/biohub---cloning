@@ -1,0 +1,111 @@
+/* 顶部栏 */
+.top-header {
+  height: 72px; /* 原 80px */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 36px; /* 原 40px */
+  border-bottom: 1px solid #f3f4f6;
+  position: sticky; /*added to allow sticking on top of screen while scrolling page */
+  top: 0;
+  z-index: 100;
+  position: -webkit-sticky; 
+  background-color: #ffffffe7; /*white bg, with slight transparent */
+}
+
+.header-title h1 {
+  font-size: 21.6px; /* 原 24px */
+  font-weight: 700;
+  color: #111827;
+}
+
+.header-profile {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-img {
+  cursor: pointer;
+  width: 36px; /* 原 40px */
+  height: 36px; /* 原 40px */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 浮动下拉框样式 */
+.profile-dropdown-box {
+  position: absolute;
+  top: 0%;
+  right: 125%;
+  width: 270px; /* 原 300px */
+  height: auto; /* changed from 180px to auto, fixing dynamic change isue //原 200px */
+  font-size: 13.5px; /* 原 15px */
+  background-color: #fff;
+  box-shadow: 0 3.6px 10.8px rgba(0, 0, 0, 0.15); /* 原 4px 12px */
+  border-radius: 10.8px; /* 原 12px */
+  padding: 14.4px; /* 原 16px */
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* 弹窗内部用户信息区域 */
+.profile-user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10.8px; /* 原 12px */
+}
+
+.dropdown-avatar {
+  width: 36px; /* 原 40px */
+  height: 36px; /* 原 40px */
+  border-radius: 50%;
+  margin-right: 10.8px; /* 原 12px */
+  object-fit: cover;
+}
+
+.dropdown-name {
+  font-weight: bold;
+}
+
+.dropdown-handle {
+  color: #666;
+  font-size: 11.7px; /* 原 13px */
+}
+
+/* “View your account” 链接 */
+.dropdown-link {
+  color: #00ba7c;
+  cursor: pointer;
+  margin-bottom: 13.5px; /* 原 15px */
+}
+
+.dropdown-link:hover {
+  text-decoration: underline;
+}
+
+/* 分割线 */
+.dropdown-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 7.2px 0; /* 原 8px */
+}
+
+/* 菜单项（Change Account / Logout） */
+.dropdown-menu-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5.4px 0; /* 原 6px */
+  color: #333;
+}
+
+.dropdown-menu-item:hover {
+  color: #000;
+  font-weight: 500;
+}
+
+.dropdown-icon {
+  font-size: 27px; /* 原 30px */
+  margin-right: 9px; /* 原 10px */
+  flex-shrink: 0;
+}
